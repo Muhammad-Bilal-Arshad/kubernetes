@@ -3,7 +3,8 @@ kind: Deployment
 metadata:
   name: web-deployment
 spec:
-  replicas: 3    selector:
+  replicas: 3
+  selector:
     matchLabels:
       app: web
   template:
